@@ -13,18 +13,20 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import com.dev.user.repository.UserEntity;
+import com.dev.user.model.UserEntity;
 import com.dev.user.repository.UserRepository;
 import com.dev.user.shared.UserDto;
 
 @Service
-public class UserServiceImpl implements UserService {
+public class CustomUserDetailService implements UserService {
 
 	@Autowired
 	UserRepository userRepository;
 
 	@Autowired
 	BCryptPasswordEncoder passwordEncoder;
+	
+	
 
 	@Override
 	public UserDto createUser(UserDto user) {

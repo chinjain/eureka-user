@@ -1,4 +1,4 @@
-package com.dev.user.repository;
+package com.dev.user.model;
 
 import java.io.Serializable;
 
@@ -12,9 +12,6 @@ import javax.persistence.Table;
 @Table(name = "users")
 public class UserEntity implements Serializable {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = -4600612904693679405L;
 
 	@Id

@@ -1,4 +1,4 @@
-package com.dev.user.config;
+package com.dev.user.projectConfig;
 
 import java.io.IOException;
 import java.util.ArrayList;
